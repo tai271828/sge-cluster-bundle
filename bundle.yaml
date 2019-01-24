@@ -3,10 +3,10 @@ description: |
   SGE cluster bundle
 applications:
   sge-master:
-    charm: ../charm-layer-sge-master/built-charms/xenial/sge-master/
+    charm: cs:~taihsiangho/sge-master-0
     num_units: 1
   sge-client:
-    charm: ../charm-layer-sge-client/built-charms/xenial/sge-client/
+    charm: cs:~taihsiangho/sge-client-0
     num_units: 2
 relations:
   - [sge-master, sge-client]
