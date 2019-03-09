@@ -3,10 +3,10 @@ description: |
   SGE cluster bundle
 applications:
   sge-master:
-    charm: cs:~tai271828/sge-master-2
+    charm: cs:~tai271828/sge-master-7
     num_units: 1
   sge-client:
-    charm: cs:~tai271828/sge-client-2
+    charm: cs:~tai271828/sge-client-3
     num_units: 2
 relations:
   - [sge-master, sge-client]
